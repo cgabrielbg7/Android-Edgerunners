@@ -1,7 +1,5 @@
 package com.example.retobloquejohndeere
 
-import android.icu.lang.UCharacter.GraphemeClusterBreak.V
-
 var tipoList = mutableListOf(
     TipoVideos(
         "Abecedario",
