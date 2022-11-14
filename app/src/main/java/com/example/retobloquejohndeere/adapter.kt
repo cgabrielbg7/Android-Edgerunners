@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.retobloquejohndeere.databinding.ItemTipovideoBinding
 
-class adapter(var context: Context, var data: List<Videos>) : RecyclerView.Adapter<adapter.ViewHolder>()     {
+class adapter(var context: Context, var data: List<TipoVideos>) : RecyclerView.Adapter<adapter.ViewHolder>()     {
 
 
     class ViewHolder (val binding: ItemTipovideoBinding) : RecyclerView.ViewHolder(binding.root)  {
@@ -27,7 +27,7 @@ class adapter(var context: Context, var data: List<Videos>) : RecyclerView.Adapt
 
         Glide.with(context)
             .load(data[position].imagen_url)
-            .into(holder.binding.imageView)
+            .into(holder.binding.imageViewTipo)
 
     }
 
